@@ -11,11 +11,17 @@ body{
   margin:0;
    }
 
+
+/*general font settings*/
 h2 {
   font-family: 'Black Ops One', cursive;
 }
 
-h3 { 
+h3{ 
+  font-family: 'Black Ops One', cursive;
+}
+
+h4 { 
   font-family: 'Black Ops One', cursive;
 }
 
@@ -31,11 +37,25 @@ li {
   font-family: 'Karla', sans-serif;
 }
 
+div {
+  font-family: 'Karla', sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 header {
   width: 100%;
   height:3rem;
   background-color: rgb(255,255,255);
+  text-align: right;
   position: fixed;
+}
+
+header.p {
+  padding-left: 3rem;
 }
 
 
@@ -44,20 +64,21 @@ header {
   width: 90%;
   height:40rem;
   background-color: rgba(255,255,255, .9);
-  margin: 5rem;
+  margin: 4rem;
 }
     
-h2.brand {
+.description h2 {
   display: inline;
   paddding-top: 2rem;
   margin-left: 3rem;
 }
 
-h2.make {
-  display: inline;
+/*so "make" class is more flush against the brand*/
+.description .make {
+  margin-left: 0;
 }
 
-.bindings {
+.description h3 {
   padding-top: rem;
   margin-left: 3rem;
 }
@@ -77,33 +98,66 @@ h2.make {
 /*basics section*/
 .basics {
   width: 90%;
-  height:90rem;
+  height:52rem;
   background-color: rgba(255,255,255, .9);
+  margin: 4rem;
+}
+
+.basics h3 {
+  float: left;
   margin: 3rem;
 }
 
 .image2 {
+  clear: both;
   float: left;
   width: 10%;
+  margin-left: 3rem;
 }
 
-image3 {
+.image3 {
   float: left;
-  width: 10%;
+  width: 11.9%;
+  margin-left: 3rem;
 }
 
-
-.closeup {
+.basics aside {
   float: left;
-  width: 10%;
+  font-size: 2rem;
+  font-style: bold;
+  margin-top: 5rem;
+  margin-left: 3rem;
+  line-height: 4rem;
 }
+
+ 
 
 /*detailed specs*/
 .detailed-specs {
   width: 90%;
-  height:30rem;
+  height:40rem;
   background-color: rgba(255,255,255, .9);
+  margin: 4rem;
+}
+
+.detailed-specs h3 {
+  float: left;
   margin: 3rem;
+}
+
+.closeup {
+  clear: both;
+  float: left;
+  width: 50%;
+  margin-left: 3rem;
+}
+
+.detailed-specs aside {
+  float: left;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  line-height: 2rem;
 }
 
 
@@ -112,8 +166,45 @@ image3 {
   width: 90%;
   height:30rem;
   background-color: rgba(255,255,255, .9);
-  margin: 3rem;
+  margin: 4rem;
+  line-height: 1rem;
 }
+
+/*hiding data*/
+.SKU {
+  visibility: hidden;
+}
+.price {
+  visibility: hidden;
+}
+.discount {
+  visibility: hidden;
+}
+.instore-availability{
+  visibility: hidden;
+}
+
+
+
+.choices-availability-price h3 {
+  float: left;
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+
+.choices-availability-price h4 {
+  clear: both;
+  margin-left: 3rem;
+}
+.choices-availability-price ul {
+  margin-left: 3rem;
+}
+.choices-availability-price div {
+  margin-left: 3rem;
+}
+
+
+
 
 /*footer formatting and position*/
 footer {
