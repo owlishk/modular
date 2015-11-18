@@ -4,58 +4,86 @@
   <head>
     <meta charset="utf-8">
     <title>Skis Detail Page</title>    
-    <link rel="stylesheet" href="styles/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Karla|Black+Ops+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/stylesheet.css">
   </head>
   
 <!--Example of single listing below. Using class to represent different data elements that would be in a database to be included in a listing, each of which is modular. There should be only one value of each for this section-->
   <body>
-    <span class="SKU">342323423</span>
-    <h2 class="brand">Volkl</h2>
-    <h2 class="make">RTM 84 UVO</h2>
-    <h3 class="bindings">with Bindings</h3>
-    <p class="summary">Ivy yule lights, bells singing elves celebration chimney candy cane singing goodwill angel angel. Elves holly chimney celebration partridge, bells chimney ivy scarf give partridge fireplace love. Love celebrate scarf, celebration lights tree elves guest nutcracker gold celebration stocking. Reindeer wreath yule, santa holly scarf nutcracker yule elves chimney candy cane. Yule celebrate jingle bells scarf chimney yule cookie, chimney wintertime frosty candy cane love. Goodwill santa love, holly holiday guest ivy noel frosty guest. Fireplace toys singing yule elves guest bells. Celebration angel chestnuts give celebrate angel eggnog give eggnog. Calendar icicle icicle celebrate cookie yule, celebration wreath wintertime angel noel nutcracker.</p>
-    <span class="gender">Women's</span>
-    <span class="age">Adult</span>
-    <span class="year">2015</span>
-    <span class="best-use">Downhill</span>
-    <span class="ski-design">All-Mountain</span>
-    <span class="terrain">Groomed</span>
-    <ul class="dimensions">
-      <li class="tip-width">125 mm</li>
-      <li class="waist-width">83 mm</li>
-      <li class="tail-width">103 mm</li>
-      <li class="sidecut-radius1">154 mm</li>
-      <li class="sidecut-radius"2>161 mm</li>
-    </ul>
-    <span class="ski camber">Tip rocker</span>
-    <span class="core">Composite</span>
-    <span class="skier-weight">Bite Me</span>
+    
+    <header>Placeholder for account and cart information</header>    
+    
+    <section class=description>
+      <h2 class="brand">Volkl</h2>
+      <h2 class="make">RTM 84 UVO</h2>
+      <h3 class="bindings">with Bindings</h3>
+      <img src="images/primary-image.jpg" class="primary-image">
+      <p class="summary">Ivy yule lights, bells singing elves celebration chimney candy cane singing goodwill angel angel. Elves holly chimney celebration partridge, bells chimney ivy scarf give partridge fireplace love. Love celebrate scarf, celebration lights tree elves guest nutcracker gold celebration stocking. Reindeer wreath yule, santa holly scarf nutcracker yule elves chimney candy cane. Yule celebrate jingle bells scarf chimney yule cookie, chimney wintertime frosty candy cane love. Goodwill santa love, holly holiday guest ivy noel frosty guest. Fireplace toys singing yule elves guest bells. Celebration angel chestnuts give celebrate angel eggnog give eggnog. Calendar icicle icicle celebrate cookie yule, celebration wreath wintertime angel noel nutcracker.</p>
+    </section>
+    
+    <section class="basics">
+      <!--Image source: http://www.ebay.com/itm/Vintage-Antique-Northland-Wood-Skis-With-Decals-/221939596133?hash=item33aca17b65:g:KXMAAOSwsFpWROUo--> 
+      <ol>
+        <li><img src="images/image2.jpg" class="image2"></li>
+        <li><img src="images/image3.jpg" class="image3"></li>
+      </ol>
+      <aside>
+        <span class="gender">Women's</span>
+        <span class="age">Adult</span>
+        <span class="year">2015</span>
+        <span class="best-use">Downhill</span>
+        <span class="ski-design">All-Mountain</span>
+        <span class="terrain">Groomed</span> 
+      </aside>
+    </section>
+    
+    <section class="detailed-specs">
+      <img src="images/image1.jpg" class="closeup">
+      <ul class="dimensions">
+        <li class="tip-width">125 mm</li>
+        <li class="waist-width">83 mm</li>
+        <li class="tail-width">103 mm</li>
+        <li class="sidecut-radius1">154 mm</li>
+        <li class="sidecut-radius"2>161 mm</li>
+      </ul>
+      <span class="ski camber">Tip rocker</span>
+      <span class="core">Composite</span>
+      <span class="skier-weight">Bite Me</span>
+    </section>
+    
+    <section class="choices-availability-price">
+      <span class="SKU">342323423</span>
+      <!--These are things that the consumer gets to choose and needs to be matched to inventory-->
+      <ul class="length">
+        <li class="length1">161 cm</li>
+        <li class="length2">168 cm</li>
+      </ul>
+      <ul class="color">
+        <li class="color1">blue</li>
+        <li class="color2">red</li>
+      </ul>
+       <!--This is a placeholder for inventory availability and pricing. These would be calculated fields based on a bunch of other criteria.-->         
+      <span class="price">$300</span>
+      <span class="discount">$50</span>
+      <span class="final-price">$250</span>
+      <span class="online-availability">yes</span>
+      <span class="instore-availability">no</span>
+    </section>
+    
+    <footer>Placeholder for corporate stuff</footer>
+    
 
-<!--Repository for product images. Image source: http://www.ebay.com/itm/Vintage-Antique-Northland-Wood-Skis-With-Decals-/221939596133?hash=item33aca17b65:g:KXMAAOSwsFpWROUo--> 
-    <img src="" class="primary-image">
-    <ol>
-      <img src="" class="image1">
-      <img src="" class="image2">
-      <img src="" class="image3">
-    </ol>
+
+
+
+
+
+
 
           
-<!--These are things that the consumer gets to choose and needs to be matched to inventory-->
-    <ul class="length">
-      <li class="length1">161 cm</li>
-      <li class="length2">168 cm</li>
-    </ul>
-    <ul class="color">
-      <li class="color1">blue</li>
-      <li class="color2">red</li>
-    </ul>
+
           
- <!--This is a placeholder for inventory availability and pricing. These would be calculated fields based on a bunch of other criteria.-->         
-    <span class="price">$300</span>
-    <span class="discount">$50</span>
-    <span class="final-price">$250</span>
-    <span class="online-availability">yes</span>
-    <span class="instore-availability">no</span>
+
     
   </body>
 </html>
