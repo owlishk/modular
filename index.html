@@ -5,13 +5,16 @@
     <meta charset="utf-8">
     <title>Skis Detail Page</title>    
     <link href='https://fonts.googleapis.com/css?family=Karla|Black+Ops+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/stylesheet.css">
   </head>
   
 <!--Example of single listing below. Using class to represent different data elements that would be in a database to be included in a listing, each of which is modular. There should be only one value of each for this section-->
   <body>
     
-    <header>Placeholder for account and cart information</header>    
+    <header>
+      <p>Placeholder for account and cart information</p>
+    </header>    
     
     <section class=description>
       <h2 class="brand">Volkl</h2>
@@ -22,55 +25,64 @@
     </section>
     
     <section class="basics">
-      <!--Image source: http://www.ebay.com/itm/Vintage-Antique-Northland-Wood-Skis-With-Decals-/221939596133?hash=item33aca17b65:g:KXMAAOSwsFpWROUo--> 
-      <ol>
+      <!--Image source: http://www.ebay.com/itm/Vintage-Antique-Northland-Wood-Skis-With-Decals-/221939596133?hash=item33aca17b65:g:KXMAAOSwsFpWROUo-->
+    <h3>The Basics</h3>
+      <ul>
         <li><img src="images/image2.jpg" class="image2"></li>
         <li><img src="images/image3.jpg" class="image3"></li>
-      </ol>
+      </ul>
       <aside>
-        <span class="gender">Women's</span>
-        <span class="age">Adult</span>
-        <span class="year">2015</span>
-        <span class="best-use">Downhill</span>
-        <span class="ski-design">All-Mountain</span>
-        <span class="terrain">Groomed</span> 
+        <div class="gender">Women's Ski</div>
+        <div class="age">Sized for Adult use</div>
+        <div class="year">Made in 2015</div>
+        <div class="best-use">Best Use: Downhill</div>
+        <div class="ski-design">Designed for: All-Mountain</div>
+        <div class="terrain">Best Terrain: Groomed</div> 
       </aside>
     </section>
     
     <section class="detailed-specs">
+      <h3>Detailed Specifications</h3>
       <img src="images/image1.jpg" class="closeup">
-      <ul class="dimensions">
-        <li class="tip-width">125 mm</li>
-        <li class="waist-width">83 mm</li>
-        <li class="tail-width">103 mm</li>
-        <li class="sidecut-radius1">154 mm</li>
-        <li class="sidecut-radius"2>161 mm</li>
-      </ul>
-      <span class="ski camber">Tip rocker</span>
-      <span class="core">Composite</span>
-      <span class="skier-weight">Bite Me</span>
+      <aside>
+        <ul class="dimensions">
+          <li class="tip-width">Tip Width: 125 mm</li>
+          <li class="waist-width">Waist Width: 83 mm</li>
+          <li class="tail-width">Tail Width: 103 mm</li>
+          <li class="sidecut-radius1">Sidecut Radius: 154 mm</li>
+          <li class="sidecut-radius"2>Sidecut Radius: 161 mm</li>
+        </ul>
+        <div class="ski camber">Ski Camber: Tip Rocker</div>
+        <div class="core">Core: Composite</div>
+        <div class="skier-weight">Skier Weight Limit: Bite Me</div>
+      </aside>
     </section>
     
     <section class="choices-availability-price">
-      <span class="SKU">342323423</span>
+      <h3>Place Your Order</h3>
+      <div class="SKU">342323423</div>
       <!--These are things that the consumer gets to choose and needs to be matched to inventory-->
+      <h4 class="length">Pick Your Length</h4>
       <ul class="length">
-        <li class="length1">161 cm</li>
-        <li class="length2">168 cm</li>
+        <li class="length1">161 cm <i class="fa fa-square-o"></i></li>
+        <li class="length2">168 cm <i class="fa fa-square-o"></i></li>
       </ul>
+      <h4 class="color">Pick Your color</h4>
       <ul class="color">
-        <li class="color1">blue</li>
-        <li class="color2">red</li>
+        <li class="color1">blue <i class="fa fa-square-o"></i></li>
+        <li class="color2">red <i class="fa fa-square-o"></i></li>
       </ul>
        <!--This is a placeholder for inventory availability and pricing. These would be calculated fields based on a bunch of other criteria.-->         
-      <span class="price">$300</span>
-      <span class="discount">$50</span>
-      <span class="final-price">$250</span>
-      <span class="online-availability">yes</span>
-      <span class="instore-availability">no</span>
+      <div class="price">$300</div>
+      <div class="discount">$50</div>
+      <div class="final-price">Final Price: $250</div>
+      <div class="online-availability">Inventory Availability: yes</div>
+      <div class="instore-availability">no</div>
     </section>
     
-    <footer>Placeholder for corporate stuff</footer>
+    <footer>
+      <p>Placeholder for corporate stuff</p>
+    </footer>
     
 
 
